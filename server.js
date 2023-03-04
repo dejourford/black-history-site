@@ -10,3 +10,9 @@ app.use(express.static('public'))
 app.listen(PORT,() => {
     console.log(`The server is running on port ${PORT}`)
 } ) 
+
+// create get api for home page
+app.get('/', (request, response) => {
+    response.sendFile(__dirname + '/index.html')
+    
+})
