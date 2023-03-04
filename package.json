@@ -1,0 +1,23 @@
+{
+  "name": "black-history-site",
+  "version": "1.0.0",
+  "description": "<h1>PURPOSE</h1>\r This website is for my son. He doesn't know a lot of Black history and during Black history month, his school didn't really teach him anything which is different from when I was growing up. When I was growing up, we did Black history projects and learned about Black history for majority of the month of February. \r <h1>OBJECTIVES</h1>\r --main page will just have random fact generator\r <br>\r --site will home, slavery, people to know, historically black colleges, and fun pages.\r <br>",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dejourford/black-history-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dejourford/black-history-site/issues"
+  },
+  "homepage": "https://github.com/dejourford/black-history-site#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
