@@ -5,21 +5,33 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* root colors */
 :root {
-    --main-color: #FFEA00;
+    --main-color: gold;
     --second-color: #FFFF00;
 }
 
 /* hamburger menu */
+.period {
+    color: var(--main-color);
+}
+
+
 li {
     list-style: none;
     
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 .navbar {
@@ -28,6 +40,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 0px 24px;
+    
 }
 
 .nav-menu {
@@ -47,7 +60,7 @@ a {
 }
 
 .nav-link:hover {
-    color: dodgerblue;
+    color: white;
 }
 
 .hamburger {
@@ -62,13 +75,135 @@ a {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background: black;
+    background: gold;
 }   /* end hamburger menu */
 
+/* hero section */
+.hero {
+    background-image: url('/public/images/main-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    height: 100vh;
+    border-top: 5px solid gold;
+}
+
+
+/* lives matter section */
+.lives-matter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:var(--main-color) ;
+    height: 50vh;
+    
+}
+
+
+
+.lives-matter-acro {
+    font-size: 4rem;
+    font-family: 'oswald', sans-serif;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+}
+
+
+.lives-matter-text {
+    font-weight: 800;
+    font-family: 'montserrat', sans-serif;
+    padding: 10px;
+    text-align: justify;
+}
+
+.lives-matter-left {
+    padding: 20px;
+}
+
+#definition {
+    text-align:center;
+    line-height: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#definition span {
+    font-style: italic;
+}   /* end lives matter section */
+
+/* random facts section */
+.random-facts-section {
+    background-image: url('/public/images/background-theme.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#random-fact {
+    font-family: 'arial', sans-serif;
+    font-size: 1.5rem;
+    padding: 20px 10px;
+    
+}
+
+
+
+.random-fact-btn {
+    font-size: 1.3rem;
+    padding: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: fit-content;
+    border: 3px solid gold;
+    font-family: 'oswald',sans-serif;
+    box-shadow: black 0px 3px 5px 0px;
+}
+
+/* link section */
+.page-links {
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: black;
+}
 
 
 
 
+/* footer section */
+footer {
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 10px;
+    background: black;
+    color: white;
+}
+
+
+
+.dedication-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.dedication-author {
+    font-family: 'Oswald', sans-serif;
+}
 
 
 
@@ -121,10 +256,10 @@ a {
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background: gray;
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        background: black;
     }
 
     .nav-item {
@@ -135,4 +270,6 @@ a {
         left: 0;
 
     }
+
+   
 }
