@@ -4,7 +4,8 @@ const app = express()
 const PORT = process.env.PORT || 8
 
 //serve static files 
-app.use(express.static('public'))
+// app.use(express.static('public'))
+app.use(express.static(__dirname));
 
 // setup listen api
 app.listen(PORT,() => {
