@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif
 }
 
 html {
@@ -53,15 +52,18 @@ a {
 .nav-branding {
     font-size: 2rem;
     color: black;
+    font-family: 'Oswald', sans-serif;
 }
 
 .nav-link {
     transition: 0.7s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: black;
+    
 }
 
-.nav-link:hover {
-    color: white;
-}
+
 
 .hamburger {
     display: none;
@@ -176,7 +178,11 @@ a {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background: black;
+    background: white;
+}
+
+.page-links a {
+    color: black;
 }
 
 
@@ -190,8 +196,8 @@ footer {
     flex-direction: column;
     justify-content: flex-end;
     padding: 20px 10px;
-    background: black;
-    color: white;
+    background: white;
+    color: black;
 }
 
 
@@ -203,34 +209,46 @@ footer {
 
 .dedication-author {
     font-family: 'Oswald', sans-serif;
-}
+}   /* end of index css */
 
-.nav-link {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 800;
-}
+
+
+/* start of about css */
 
 /* images carousel */
-
-.carousel::before {
-    content: '';
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background: gold;
-    position: absolute;
-    
-    bottom: 0;
-    z-index: -1;
-}
-
-
 .carousel {
     width: 30%;
     margin: 0 auto;
-
 }
+
+/* main section */
+
+
+.main-header-about-text {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    padding: 20px;
+    text-decoration: 5px solid gold underline;
+    letter-spacing: 0.4rem;
+}
+
+.main-section-about-text {
+    text-align: justify;
+    padding: 20px 30px;
+}
+
+/* footer section */
+.footer-about {
+    font-size: 0.7rem;
+    font-weight: 800;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
 
 
 
@@ -285,7 +303,7 @@ footer {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        background: black;
+        background: white;
     }
 
     .nav-item {
@@ -298,9 +316,10 @@ footer {
     }
 
     .carousel {
-        width: 0%;
+        width: 70%;
         margin: 0 auto;
     
     }
+
    
 }

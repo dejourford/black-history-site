@@ -8,12 +8,13 @@
     <!-- two main fonts for webpage -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="public/css/styles.css">
 </head>
 <body>
     <div class="content-wrapper">
-        <div class="content">
+        
             <!-- hamburger menu nav -->
             <nav class="navbar"> 
                 <a href="#" class="nav-branding">About<span class="period">.</span></a>
@@ -27,7 +28,7 @@
             
     
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Slavery</a>
+                        <a href="/slavery.html" class="nav-link">Slavery</a>
                     </li>
     
                     <li class="nav-item">
@@ -48,11 +49,11 @@
     
 
         <main>
-            <div class="main-header">
-                <h1>Mission</h1>
+            <div class="main-header-about">
+                <h1 class="main-header-about-text">Mission</h1>
             </div>
 
-            <div class="main-section">
+            <div class="main-section-about-text">
                 <p>This site was created because
                     I've noticed over the years that
                     my son wasn't learning much Black History.
@@ -63,33 +64,42 @@
                     sight of that. So my mission, you ask? My mission is to
                     educate the youth even with the smallest amount of Black History.
                 </p>
+
+
+                <!-- image carousel -->
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="public/images/kids.JPG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="public/images/kids-pose.JPG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="public/images/family-pic.JPG" class="d-block w-100" alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>    <!-- end of carousel -->
+
+
             </div>
 
-            <!-- image carousel -->
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="public/images/kids.JPG" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="public/images/kids-pose.JPG" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="public/images/family-pic.JPG" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>    <!-- end of carousel -->
-
+            
 
         </main>
+
+        <footer class="footer-about">
+            <p class="footer-text-about">To my children, Kaiden, Wynden, Carter, and Alaya...Let this site be of education to you.</p>
+            <span class="footer-author-about">-Dad</span>
+        </footer>
 
         
     </div>
